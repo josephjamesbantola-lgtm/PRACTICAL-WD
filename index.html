@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photoshop Snipping Tools – Home</title>
+
+<style>
+    body{
+        margin:0;
+        font-family:Arial, sans-serif;
+        background: url("Background1.png") no-repeat center center fixed;
+        background-size: cover;
+        color:#fff;
+    }
+
+    nav{
+        background:rgba(0, 0, 0, 0.55);
+        padding:15px 40px;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        backdrop-filter: blur(6px);
+    }
+
+    nav a{
+        color:white;
+        text-decoration:none;
+        margin-left:20px;
+        font-size:18px;
+    }
+    nav a:hover{ color:#00d4ff; }
+
+    .hero{
+        text-align:center;
+        padding:100px 20px;
+        background:rgba(0, 0, 0, 0.45);
+        margin:40px;
+        border-radius:20px;
+        backdrop-filter:blur(4px);
+    }
+
+    .hero h1{
+        font-size:60px;
+        color:#00d4ff;
+    }
+    .hero p{
+        font-size:20px;
+        margin-top:20px;
+        color:#e8e8e8;
+    }
+
+    .tools{
+        display:flex;
+        justify-content:center;
+        gap:40px;
+        margin-top:60px;
+    }
+
+    .card{
+        background:rgba(0,0,0,0.55);
+        padding:40px;
+        width:300px;
+        border-radius:15px;
+        text-align:center;
+        transition:0.3s;
+        border:2px solid transparent;
+        cursor:pointer;
+        color:white;
+        font-size:22px;
+        backdrop-filter:blur(5px);
+    }
+    .card:hover{
+        border-color:#00d4ff;
+        transform:translateY(-10px);
+    }
+
+    button.card{
+        background:rgba(0,0,0,0.55);
+        border:2px solid transparent;
+    }
+</style>
+</head>
+
+<body>
+<nav>
+    <div style="font-size:24px;font-weight:bold;color:#00d4ff;">Photoshop Tools</div>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="lasso.html">Lasso</a>
+        <a href="polygon.html">Polygon</a>
+        <a href="magnetic.html">Magnetic</a>
+        <a href="about.html">About</a>
+    </div>
+</nav>
+
+<div class="hero">
+    <h1>Photoshop Snipping Tools</h1>
+    <p>What is Photoshop? Photoshop is an excellent app for designing and editing images, posters, and different designs!</p>
+    <p>This website will brief you on how to use one of the 3 different types of Lasso Tools!</p>
+    <p>Each tutorial will provide a simple and detailed explanation to teach you.</p>
+
+    <div class="tools">
+
+        <button class="card" onclick="location.href='lasso.html'">
+            Lasso Tool
+        </button>
+
+        <button class="card" onclick="location.href='polygon.html'">
+            Polygonal Lasso
+        </button>
+
+        <button class="card" onclick="location.href='magnetic.html'">
+            Magnetic Lasso
+        </button>
+
+    </div>
+</div>
+
+</body>
+</html>
